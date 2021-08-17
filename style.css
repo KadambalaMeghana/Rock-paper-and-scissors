@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    background: #FFEBD1;
+}
+.container {
+    background: #FFF7EE;
+    padding: 32px;
+    max-width: 425px;
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+.container h2{
+    margin-bottom: 32px;
+    text-align: center;
+}
+.rpgcont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.rpgcont img {
+    padding: 8px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(167,126,74);
+    transition: 0.15s;
+}
+.rpgcont img:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.rpgcont img:active, .rpgcont img:focus {
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}   
+.container p {
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding:12px 0;
+    transition: 0.2s;
+}
+#score {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#score .sides {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #FEE0BA;
+    border-radius: 20px;
+
+}
+.win {
+    background: #4EF163;
+}
+.lose {
+    background: #FF5252;
+}
+.tie {
+    background: #FFF8C9;
+}
